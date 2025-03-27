@@ -41,7 +41,7 @@ console.log("This file last modified " + docMod); // generates a message in Java
 
 // This code draws a rectangle that is filled 
 function draw_myCanvas(){ 
-	var myCanvas_canvas = document.getElementById("myCanvas"): //This code finds the canvas element in the document object model.
+	var myCanvas_canvas = document.getElementById("myCanvas"); //This code finds the canvas element in the document object model.
 	var myCanvas_context = myCanvas_canvas.getContext("2d"); //this code draws the context 
 	myCanvas_context.fillRect( 30,30,200,150); // This code plots the rectangle at (30,30), and it has a width of 200 and a height of 150. 
 }
@@ -50,7 +50,7 @@ function draw_myCanvas(){
 function name_myCanvas (){ 
 	var myCanvas_canvas = document.getElementById("myCanvas"); //This code finds canvas element in the document object model. 
 	var myCanvas_context = myCanvas_canvas.getContext("2d"); //This code draws context. 
-	myCanvas_context.dont = "30px Arial"; // This code sets the font size and style 
+	myCanvas_context.font = "30px Arial"; // This code sets the font size and style 
 	myCanvas_context.fillText("Janvi Duri", 90,90); // This code draws my name at (90,90). 
 } 
 
@@ -108,7 +108,7 @@ function name_myCanvas (){
 
 	<br/> 
 	<!-- This code makes a border on the canvas --> 
-	<canvas id="myCanvas" width="300" height="400" style="border:1px solid #000000;" ></canvas>; <!--adds the canvas and the border --> 
+	<canvas id="myCanvas" width="300" height="400" style="border:1px solid #000000;" ></canvas> <!--adds the canvas and the border --> 
 
 
 	<br/> 
@@ -123,7 +123,7 @@ function name_myCanvas (){
 <a href="#three" onclick="image_myCanvas()" class="w3-btn w3-black"> Sushi Image </a>
 
 <!-- This code creates a button and outputs the clear function when clicked. --> 
-<br /> <a href="four" onclick="clear_myCanvas()" class="w3-btn w3-black" style="margin-top: 10px;"> Clear Canvas </a>
+<br /> <a href="#four" onclick="clear_myCanvas()" class="w3-btn w3-black" style="margin-top: 10px;"> Clear Canvas </a>
 
 </div> 
 	
