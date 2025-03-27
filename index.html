@@ -68,8 +68,11 @@ function name_myCanvas (){
 	}
 
 // this code cleaers the canvas. 
-	function clear_myCanvas
-		
+	function clear_myCanvas(){ 
+		var myCanvas_canvas = document.getElementById("myCanvas");// This code finds canvas element in the document object model 
+		var myCanvas_context = myCanvas_canvas.getContext("2d"); //this code draws the context. 
+		myCanvas_context.clearRect(0,0,500,500); // This canvas area of 500 by 500 is cleared. 
+	}		
 
 </script>
 
@@ -103,7 +106,9 @@ function name_myCanvas (){
 	
 <div id="content" class="w3-container">
 
-	<canvas id="myCanvas" width="300" height="400" style="border:1px solid #000000;" ></canvas>; //adds canvas and border 
+	<br/> 
+	<!-- This code makes a border on the canvas --> 
+	<canvas id="myCanvas" width="300" height="400" style="border:1px solid #000000;" ></canvas>; //adds the canvas and the border  
 	
 	<p>Content goes here.</p>
 		
