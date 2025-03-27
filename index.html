@@ -59,6 +59,16 @@ function name_myCanvas (){
 		var myCanvas_canvas = document.getElementById("myCanvas"); //This code finds canvas element in the document object model 
 		var myCanvas_context = myCanvas_canvas.getContext("2d"); //This code draws context. 
 		var sushi = new Image(); //creates image object 
+		sushi.src = "sushi.png"; //source of the image 
+		sushi.onload = function () { 
+			var targetWidth = sushi.width * 0.5; 
+			var targetHeight = sushi.height * 0.5; 
+		myCanvas_context.drawImage(sushi, 0.5, 0.5, targetWidth, targetHeight); 
+		}; 
+	}
+
+// this code cleaers the canvas. 
+	function clear_myCanvas
 		
 
 </script>
