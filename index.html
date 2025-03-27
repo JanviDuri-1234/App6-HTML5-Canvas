@@ -37,7 +37,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <script>
 var docMod = document.lastModified; // loads last modified time stamp into docMod variable
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
-console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
+console.log("This file last modified " + docMod); // generates a message in JavaScript console (found in developers tools) with time stamp. 
 
 // This code draws a rectangle that is filled 
 function draw_myCanvas(){ 
@@ -45,6 +45,21 @@ function draw_myCanvas(){
 	var myCanvas_context = myCanvas_canvas.getContext("2d"); //this code draws the context 
 	myCanvas_context.fillRect( 30,30,200,150); // This code plots the rectangle at (30,30), and it has a width of 200 and a height of 150. 
 }
+
+// This code draws my name. 
+function name_myCanvas (){ 
+	var myCanvas_canvas = document.getElementById("myCanvas"); //This code finds canvas element in the document object model. 
+	var myCanvas_context = myCanvas_canvas.getContext("2d"); //This code draws context. 
+	myCanvas_context.dont = "30px Arial"; // This code sets the font size and style 
+	myCanvas_context.fillText("Janvi Duri", 90,90); // This code draws my name at (90,90). 
+} 
+
+//This code adds an image of a sushi roll. 
+	function image_myCanvas(){ 
+		var myCanvas_canvas = document.getElementById("myCanvas"); //This code finds canvas element in the document object model 
+		var myCanvas_context = myCanvas_canvas.getContext("2d"); //This code draws context. 
+		var sushi = new Image(); //creates image object 
+		
 
 </script>
 
