@@ -63,6 +63,15 @@ function name_myCanvas (){
 		sushi.onload = function () { 
 			var targetWidth = sushi.width * 0.5; 
 			var targetHeight = sushi.height * 0.5; 
+		if (targetWidth > canvasWidth) {
+			targetWidth = canvasWidth;
+			targetHeight = (sushi.height * canvasWidth) / sushi.width; 
+		} 
+		if (targetHeight > canvasHeight) { 
+			targetHeight = canvasHeight; 
+			targetWidth = (sushi.width * canvasHeight) / sushi.height; 
+		} 
+			
 		myCanvas_context.drawImage(sushi, 0, 0, targetWidth, targetHeight); 
 		}; 
 	}
